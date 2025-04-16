@@ -1,0 +1,18 @@
+<div class="campo-container-texto-area-linha mt-1" [style]="campoTextoStyle">
+  <label [style]="styleLabel">{{labelText}}</label>
+
+  <textarea #inputNativo
+            [class]="classe"
+            [style]="style"
+            [required]="required"
+            [readonly]="readonly"
+            [maxlength]="maxlength"
+            [rows]="rows"
+            [placeholder]="placeholder"
+            [(ngModel)]="texto">
+  </textarea>
+
+  <label>{{labelDescricao}}</label>
+</div>
+
+

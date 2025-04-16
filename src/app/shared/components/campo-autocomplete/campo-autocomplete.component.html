@@ -1,0 +1,15 @@
+<div class="mt-1">
+  <label>{{labelText}}</label>
+  <p-autoComplete [(ngModel)]="texto"
+                  [class]="classe"
+                  appendTo="body"
+                  [readonly]="readonly"
+                  [required]="required"
+                  [placeholder]="placeholder"
+                  [suggestions]="listaPaciente"
+                  [field]="field"
+                  (onSelect)="onSelect.emit()"
+                  (completeMethod)="buscarPacientes($event)"
+                  [style]="{'text-transform': 'uppercase', 'width': '100%'}">
+  </p-autoComplete>
+</div>

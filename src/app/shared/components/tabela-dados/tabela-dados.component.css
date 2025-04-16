@@ -1,0 +1,111 @@
+.content-pesquisa {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+.tabela {
+  height: 90%;
+  width: 100%;
+  top: 50px;
+}
+
+::ng-deep .tabela-dados-componente .p-datatable .p-datatable-header {
+  padding: 5px;
+  background: unset;
+}
+
+::ng-deep .tabela-dados-componente .p-datatable .p-datatable-thead > tr > th {
+  padding: 0.3rem;
+  background: unset;
+  text-align: center;
+}
+
+::ng-deep .tabela-dados-componente .p-datatable .p-datatable-tbody > tr > td {
+  border: none;
+  padding: 0;
+  text-align: center;
+}
+
+::ng-deep .tabela-dados-componente .p-datatable .p-datatable-tbody > tr {
+  border-top: 1px solid #464646;
+  border-left: 1px solid #e9ecef;
+  border-right: 1px solid #0a0a0a;
+}
+
+::ng-deep .tabela-dados-componente .p-datatable .p-datatable-tbody > tr > td > a > img {
+  width: 75%;
+}
+
+::ng-deep .tabela-dados-componente .p-datatable.p-datatable-gridlines .p-paginator-bottom {
+  background: silver;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+  padding: 3px;
+}
+
+::ng-deep .tabela-dados-componente .p-paginator .p-paginator-pages .p-paginator-page {
+  height: 0;
+}
+
+::ng-deep .tabela-dados-componente .p-paginator .p-paginator-first {
+  height: 0;
+}
+
+::ng-deep .tabela-dados-componente .p-paginator .p-paginator-prev {
+  height: 0;
+}
+
+::ng-deep .tabela-dados-componente .p-paginator .p-paginator-next {
+  height: 0;
+}
+
+::ng-deep .tabela-dados-componente .p-paginator .p-paginator-last {
+  height: 0;
+}
+
+::ng-deep .tabela-dados-componente .p-paginator {
+  padding: 0;
+  background: unset;
+  border: unset;
+}
+
+::ng-deep .tabela-dados-componente .p-paginator .p-paginator-current {
+  height: 1.357rem;
+}
+
+::ng-deep .tabela-dados-componente .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: gray;
+  color: #fff;
+  font-weight: bold;
+}
+
+.opcao-botao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.alternativa {
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.coluna-acoes {
+  display: flex;
+  justify-content: center;
+}
+
+.calendario-da-tabela {
+  background-color: #fff;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+  box-sizing: border-box;
+  padding: 3px 4px;
+  height: 23px;
+  border-radius: unset;
+}
+

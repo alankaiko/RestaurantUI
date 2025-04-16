@@ -1,0 +1,52 @@
+.faixa-identificacao {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  background-color: #2E5598;
+}
+
+.faixa-titulo {
+  margin: 0;
+  padding: 0 0 0 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.titulo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.faixa-botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.botao {
+  color: #fff;
+  text-decoration: underline;
+  margin-left: 3px;
+  margin-right: 6px;
+  font-weight: bold;
+  display: inline-flex;
+  padding-left: 2px;
+  padding-right: 2px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.botao  > img {
+  margin-right: 3px;
+}
+
+label {
+  font-size: 13px;
+}

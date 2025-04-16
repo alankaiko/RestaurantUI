@@ -1,0 +1,92 @@
+.painelMenu {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tabMenuTopo {
+  position: relative;
+  background: #F1F1F1;
+  height: 14.75rem;
+}
+
+.tab {
+  float: left;
+}
+
+.tab-switch {
+  display: none;
+}
+
+.tab-label {
+  position: relative;
+  display: block;
+  padding: 0.2em 0.9em;
+  background: #F1F1F1;
+  font-size: 85%;
+  cursor: pointer;
+  top: 0;
+}
+
+.tab-switch:checked + .tab-label {
+  background: #fff;
+  z-index: 1;
+  color: #2A558C;
+  border-top: 1px solid #c4c2c2;
+  border-left: 1px solid #c4c2c2;
+  border-right: 1px solid #c4c2c2;
+}
+
+.tab-content {
+  height: 12rem;
+  position: absolute;
+  z-index: 1;
+  top: 1.8em;
+  left: 0;
+  padding: 1.618rem;
+  background: #FAFAFA;
+  opacity: 0;
+  border-top: 1px solid #c4c2c2;
+}
+
+.tab-switch:checked + label + .tab-content {
+  z-index: 2;
+  opacity: 1;
+}
+
+
+.botaoprincipal {
+  width: 65px;
+  cursor: pointer;
+  display: inline-grid;
+  font-size: 78%;
+  font-weight: bold;
+  color: rgb(73, 71, 71);
+  text-align: center;
+  text-shadow: 0 -1px -1px rgba(0,0,0,.2)!important;
+  border: none;
+  padding: 2px 0 2px;
+  line-height: 1.7;
+  position: relative;
+  margin: 0 0.5px;
+}
+
+.botaoprincipal:hover {
+  background-color: rgb(255, 249, 249);
+  border: 1px solid rgb(80, 78, 78);
+}
+
+.botaoprincipal > img {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.botaoprincipal > a {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 13px;
+}

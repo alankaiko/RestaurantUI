@@ -1,0 +1,20 @@
+.campo-container-texto {
+  display: inline-grid;
+  width: 100%;
+}
+
+.botao-imagem-a img {
+  width: 75%;
+}
+
+.botao-dialogo-cadastro {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+  background: silver;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+}
+
+.botao-dialogo-cadastro:hover {
+  box-shadow: unset;
+}

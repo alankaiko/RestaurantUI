@@ -1,0 +1,23 @@
+<div [style]="style" class="campo-container-dropdown mt-1">
+  <label [style]="classeLabel">{{labelText}}</label>
+  <p-dropdown #inputNativo
+              appEnterKey
+              [class]="classe"
+              [styleClass]="classe"
+              [required]="required"
+              [filter]="filtro"
+              [filterBy]="filterBy"
+              [showClear]="showClear"
+              [readonly]="readonly"
+              (keydown.enter)="enter.emit()"
+              [placeholder]="placeholder"
+              (onChange)="change.emit()"
+              [(ngModel)]="texto"
+              [style]="{'background-color': possuiCor ? corLabel : '', 'width': '100%'}"
+              [options]="options"
+              [autoDisplayFirst]="autoDisplayFirst"
+              appendTo="body">
+  </p-dropdown>
+</div>
+
+

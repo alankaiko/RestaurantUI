@@ -1,0 +1,23 @@
+<section class="rodape-identificacao">
+  <div class="grid div-rodape">
+    <div class="col-1 div-rodape-icone">
+      <img [src]="iconeCaminho">
+    </div>
+
+    <div class="col-2 div-rodape-descricao">
+      <div class="col-12 identificacao-titulo">
+        <span>{{titulo}}</span>
+      </div>
+
+      <div *ngIf="qtdVisualizar" class="col-12 identificacao-quantidade">
+        <span>{{qtdVisualizar}} registros em exibição</span>
+      </div>
+    </div>
+
+    <div class="col-9 botoes" *ngIf="botoesRef">
+      <ng-container>
+        <ng-template [ngTemplateOutlet]="botoesRef" ></ng-template>
+      </ng-container>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,65 @@
+::ng-deep .dialogo-geral .p-dialog-header-icon .p-dialog-header-close-icon {
+  display: none;
+}
+
+::ng-deep .dialogo-geral .p-dialog {
+  background: silver;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+  padding: 3px;
+}
+
+::ng-deep .dialogo-geral .p-dialog .p-dialog-content {
+  background: unset;
+  padding: 1rem 0.5rem;
+}
+
+::ng-deep .dialogo-geral .p-dialog .p-dialog-footer {
+  background: unset;
+  padding: 0;
+}
+
+::ng-deep .p-dialog .p-dialog-header {
+  align-items: center;
+  background: linear-gradient(90deg, navy, #1084d0);
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 2px 3px 3px;
+  -webkit-font-smoothing: none;
+  font-family: "Pixelated MS Sans Serif", Arial, serif;
+  font-size: 11px;
+}
+
+::ng-deep .p-dialog .p-dialog-header .p-dialog-title {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-right: 24px;
+  font-size: unset;
+}
+
+::ng-deep .p-dialog .p-dialog-header .p-dialog-header-icons {
+  width: unset;
+  height: unset;
+  color: unset;
+  border: 0 none;
+  background: unset;
+  border-radius: 50%;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+  margin-right: unset;
+}
+
+::ng-deep .p-dialog .p-dialog-header .p-dialog-header-icon {
+  min-width: 18px;
+  min-height: 18px;
+}
+
+::ng-deep .p-dialog .p-dialog-header .p-dialog-header-icons button {
+  background-image: url("src/assets/icone-menu/fechar.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+}
+
+

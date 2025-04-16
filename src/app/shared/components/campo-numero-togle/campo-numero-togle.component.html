@@ -1,0 +1,19 @@
+<div class="campo-container-texto mt-1">
+  <label>{{labelText}}</label>
+  <p-inputNumber #inputNativo
+                 [(ngModel)]="texto"
+                 [class]="classe"
+                 [id]="id"
+                 [min]="min"
+                 [max]="max"
+                 [showButtons]="showButtons"
+                 [buttonLayout]="buttonLayout"
+                 spinnerMode="horizontal"
+                 [step]="step"
+                 decrementButtonClass="p-button-danger"
+                 incrementButtonClass="p-button-success"
+                 incrementButtonIcon="pi pi-plus"
+                 decrementButtonIcon="pi pi-minus">
+  </p-inputNumber>
+</div>
+

@@ -1,0 +1,12 @@
+<div class="mt-1" [style]="styleDiv" class="campo-checkbox-linha">
+  <label [style]="styleLabel">{{labelText}}</label>
+  <p-checkbox (change)="textoChange.emit(texto)"
+              [style]="style"
+              [binary]="binary"
+              [class]="classe"
+              [disabled]="disabled"
+              [readonly]="readonly"
+              [(ngModel)]="texto">
+  </p-checkbox>
+  <label *ngIf="esquerda">{{labelText}}</label>
+</div>

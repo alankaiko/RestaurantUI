@@ -1,0 +1,14 @@
+<div class="campo-container-texto mt-1">
+  <label *ngIf="possuiLabel">{{labelText}}</label>
+
+  <p-editor #textoreceita
+            [id]="id"
+            [class]="classe"
+            [(ngModel)]="texto"
+            name="textoreceita"
+            [style]="style"
+            [readonly]="readonly">
+  </p-editor>
+</div>
+
+

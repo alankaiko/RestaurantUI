@@ -1,0 +1,21 @@
+.campo-container-monetario {
+  display: inline-grid;
+  width: 100%;
+}
+
+.campo-monetario {
+  border: unset;
+  text-align: right;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3px 4px;
+  padding-left: 5px !important;
+  height: 21px;
+  line-height: 2;
+  margin-top: -1px;
+}
+
+.campo-container-monetario input[readonly]{
+  background-color: silver;
+}

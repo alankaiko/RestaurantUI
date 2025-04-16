@@ -1,0 +1,13 @@
+<div class="campo-container-texto">
+  <label *ngIf="possuiLabel"
+         [style]="styleLabel">
+
+    {{labelText}}
+  </label>
+
+  <button [style]="style"
+          [disabled]="disabled"
+          [class]="classeButton">
+    {{labelButton}}
+  </button>
+</div>

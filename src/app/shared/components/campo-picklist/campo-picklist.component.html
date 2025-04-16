@@ -1,0 +1,17 @@
+<div class="campo-picklist mt-1" [style]="campoTextoStyle">
+  <label [style]="classeLabel">{{labelText}}</label>
+
+  <p-pickList class="lista-selecao"
+              [source]="lista"
+              [target]="texto">
+    <ng-template let-item pTemplate="item">
+      <div>
+        <span class="uppercase">
+          {{item?.label}}
+          {{item?.nomeunidade}}
+          {{item?.nome}}
+          {{item?.titulo}}</span>
+      </div>
+    </ng-template>
+  </p-pickList>
+</div>

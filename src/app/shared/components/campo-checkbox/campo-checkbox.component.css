@@ -1,0 +1,24 @@
+.campo-container-texto {
+  display: inline-grid;
+  width: 100%;
+}
+
+.mesma_linha {
+  display: flex;
+  width: 100%;
+}
+
+.campo-container-texto > input{
+  width: 100%;
+}
+
+label {
+  font-size: 16px;
+}
+
+::ng-deep .p-checkbox .p-checkbox-box {
+  background-color: #fff;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+  box-sizing: border-box;
+  padding-left: 5px;
+}

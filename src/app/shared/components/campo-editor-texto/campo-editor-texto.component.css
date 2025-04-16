@@ -1,0 +1,32 @@
+::ng-deep .ql-toolbar.ql-snow{
+  padding: 0;
+}
+
+::ng-deep .ql-snow.ql-toolbar button, .ql-snow .ql-toolbar button {
+  min-width: unset;
+}
+
+::ng-deep .p-editor-container {
+  background-color: #fff;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+  box-sizing: border-box;
+  padding: 3px 4px;
+}
+
+::ng-deep .ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  padding: 0;
+  margin-top: unset;
+}
+
+::ng-deep .p-editor-container .p-editor-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options .ql-picker-item {
+  padding: 0.2rem 0.3rem;
+  font-size: 16px;
+}
+
+::ng-deep .ql-snow .ql-picker.ql-header {
+  width: 120px;
+}
+
+::ng-deep .ql-snow .ql-picker.ql-font {
+  width: 120px;
+}

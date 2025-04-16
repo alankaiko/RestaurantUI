@@ -1,0 +1,12 @@
+.campo-container-texto {
+  display: inline-grid;
+  width: 100%;
+}
+
+::ng-deep .ui-spinner-button {
+  min-width: unset;
+  min-height: unset;
+  width: 35px !important;
+}
+
+

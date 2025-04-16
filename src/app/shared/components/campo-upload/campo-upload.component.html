@@ -1,0 +1,20 @@
+<div class="campo-container-texto mt-1" [style]="campoTextoStyle">
+  <label *ngIf="possuiLabel">{{labelText}}</label>
+  <p-fileUpload [name]="name"
+                [mode]="mode"
+                [chooseIcon]="chooseIcon"
+                [auto]="auto"
+                [multiple]="multiple"
+                [class]="classe"
+                [id]="id"
+                [maxFileSize]="maxFileSize"
+                [chooseLabel]="chooseLabel"
+                [accept]="accept"
+                [headers]="headers"
+                [url]="url"
+                (onUpload)="onUpload.emit($event)"
+                (onError)="onError.emit()">
+  </p-fileUpload>
+</div>
+
+

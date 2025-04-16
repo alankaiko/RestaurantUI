@@ -1,0 +1,16 @@
+<div class="campo-container-monetario mt-1" [style]="campoTextoStyle">
+  <label [style]="styleLabel">{{labelText}}</label>
+
+  <input currencyMask
+         [(ngModel)]="texto"
+         class="campo-monetario"
+         [style]="style"
+         (ngModelChange)="ngModelChange.emit()"
+         [class]="classe"
+         [required]="required"
+         [placeholder]="placeholder"
+         [readonly]="readonly"
+         [options]="{ prefix: prefix, thousands: thousands, decimal: decimal }"/>
+</div>
+
+

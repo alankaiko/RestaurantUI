@@ -1,0 +1,12 @@
+<div class="mt-1" [style]="styleDiv" [ngClass]="display_flex ? 'mesma_linha' : 'campo-container-texto'">
+  <label *ngIf="!esquerda">{{labelText}}</label>
+  <p-checkbox (onChange)="change.emit()"
+              (ngModelChange)="textoChange.emit(texto)"
+              [style]="style"
+              [binary]="binary"
+              [class]="classe"
+              [readonly]="readonly"
+              [(ngModel)]="texto">
+  </p-checkbox>
+  <label *ngIf="esquerda">{{labelText}}</label>
+</div>

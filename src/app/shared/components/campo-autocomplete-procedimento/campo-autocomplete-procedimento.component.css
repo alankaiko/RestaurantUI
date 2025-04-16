@@ -1,0 +1,23 @@
+.campo-container-texto {
+  display: inline-grid;
+  width: 100%;
+}
+
+.campo-container-texto > input{
+  width: 100%;
+}
+
+::ng-deep p-autocomplete .p-autocomplete > span {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+::ng-deep p-autocomplete .p-autocomplete > input {
+  width: 100%;
+  text-transform: uppercase;
+  padding-left: 5px !important;
+}
+
+label {
+  font-size: 16px;
+}

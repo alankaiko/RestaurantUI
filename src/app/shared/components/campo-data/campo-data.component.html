@@ -1,0 +1,33 @@
+<div class="campo-container-data mt-1" [style]="style">
+  <label [style]="styleLabel">{{labelText}}</label>
+  <p-calendar [(ngModel)]="texto"
+              #datacadastro="ngModel"
+              appendTo="body"
+              appEnterKey
+              [class]="classe"
+              (onClickOutside)="onClickOutside.emit()"
+              [inputStyleClass]="classe"
+              [styleClass]="classe"
+              [showTime]="showTime"
+              [hourFormat]="hourFormat"
+              [dateFormat]="dateFormat"
+              [showOnFocus]="showOnFocus"
+              [placeholder]="placeholder"
+              [timeOnly]="timeOnly"
+              [inline]="inline"
+              [style]="styleCalendario"
+              [stepMinute]="stepMinute"
+              [monthNavigator]="monthNavigator"
+              [yearNavigator]="yearNavigator"
+              [selectionMode]="selectionMode"
+              [yearRange]="yearRange"
+              [minDate]="minDate"
+              (ngModelChange)="change.emit()"
+              [maxDate]="maxDate"
+              (onClose)="onClose.emit()"
+              [readonlyInput]="readonly"
+              [required]="required">
+  </p-calendar>
+</div>
+
+

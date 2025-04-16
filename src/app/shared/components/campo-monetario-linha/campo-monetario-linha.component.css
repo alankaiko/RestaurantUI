@@ -1,0 +1,13 @@
+.campo-container-monetario-linha {
+  display: flex;
+  vertical-align: middle;
+}
+
+.campo-monetario {
+  background-color: #fff;
+  border: unset;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+  box-sizing: border-box;
+  padding: 3px 4px;
+  height: 23px;
+}

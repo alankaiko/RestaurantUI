@@ -1,0 +1,6 @@
+<p-tree [value]="entidades"
+        [selectionMode]="selectionMode"
+        [(selection)]="selection"
+        (onNodeSelect)="onNodeSelect.emit($event)"
+        (onNodeUnselect)="onNodeUnselect.emit($event)">
+</p-tree>

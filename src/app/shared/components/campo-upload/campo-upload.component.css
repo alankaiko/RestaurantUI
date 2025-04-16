@@ -1,0 +1,30 @@
+.campo-container-texto {
+  display: inline-grid;
+  width: 100%;
+}
+
+.campo-container-texto > input{
+  width: 100%;
+  padding-left: 5px !important;
+}
+
+label {
+  font-size: 16px;
+}
+
+::ng-deep .p-button.p-fileupload-choose {
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+  min-height: 23px;
+  min-width: 75px;
+  padding: 0 12px;
+  background: silver;
+  color: unset;
+  border: unset;
+  border-radius: unset;
+  font-size: 16px;
+}
+
+::ng-deep .p-button.p-fileupload-choose:hover {
+  background: silver;
+  color: unset;
+}

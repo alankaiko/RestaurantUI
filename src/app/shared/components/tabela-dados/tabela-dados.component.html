@@ -1,0 +1,103 @@
+<p-table #tabelaDados
+         class="tabela-dados-componente"
+         [value]="entidades"
+         [dataKey]="dataKey"
+         [columns]="colunas"
+         [lazy]="lazy"
+         [responsiveLayout]="responsiveLayout"
+         [showCurrentPageReport]="showCurrentPageReport"
+         [paginator]="paginator"
+         [styleClass]="styleClass"
+         [rows]="rows"
+         [rowHover]="rowHover"
+         [totalRecords]="totalRecords"
+         [exportHeader]="exportHeader"
+         (onLazyLoad)="onLazyLoad.emit($event)"
+         [selectionMode]="selectionMode"
+         [(selection)]="selection"
+         [globalFilterFields]="globalFilterFields"
+         currentPageReportTemplate="Visualizar {first} até {last} de um total de {totalRecords} registros">
+
+  <ng-template pTemplate="caption" *ngIf="possuiFiltro">
+    <div class="flex justify-content-between flex-column sm:flex-row">
+      <div class="col-1">
+        <button (click)="clear(tabelaDados)">
+          Limpar Filtro
+        </button>
+      </div>
+
+      <div class="col-9">
+        <ng-container>
+          <ng-template [ngTemplateOutlet]="pesquisarRef">
+          </ng-template>
+        </ng-container>
+      </div>
+
+
+      <div class="col-2">
+        <input pInputText
+               type="text"
+               style="padding-left: 7px"
+               #filtroTabela
+               (change)="tabelaDados.filterGlobal(filtroTabela.value, 'contains')"
+               placeholder="Procurar"
+               class="w-full"/>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate="header">
+    <tr>
+      <th *ngIf="verRef"
+          class="window"
+          [width]="'5%'">
+
+        Ver
+      </th>
+
+      <th *ngFor="let coluna of colunas"
+          class="window"
+          [class]="coluna.styleClass"
+          [width]="coluna.width">
+                <span>
+                    {{coluna.titulo}}
+                </span>
+      </th>
+
+      <th *ngIf="acoesRef"
+          class="window"
+          [width]="'10%'">
+
+        Ações
+      </th>
+    </tr>
+  </ng-template>
+
+  <ng-template pTemplate="body" let-entidade let-columns="columns">
+    <tr [ngStyle]="{backgroundColor: configurarCor(entidade.cor)}">
+      <td *ngIf="verRef" class="coluna-ver">
+        <ng-container>
+          <ng-template [ngTemplateOutlet]="verRef"
+                       [ngTemplateOutletContext]="{$implicit: entidade}">
+          </ng-template>
+        </ng-container>
+      </td>
+
+      <td *ngFor="let coluna of colunas">
+        <span>{{getValorDoCampo(entidade, coluna)}}</span>
+      </td>
+
+      <td *ngIf="acoesRef" class="coluna-acoes">
+        <ng-container>
+          <ng-template [ngTemplateOutlet]="acoesRef"
+                       [ngTemplateOutletContext]="{$implicit: entidade}">
+          </ng-template>
+        </ng-container>
+      </td>
+    </tr>
+  </ng-template>
+
+  <ng-template pTemplate="emptymessage">
+    Lista não encontrada.
+  </ng-template>
+</p-table>

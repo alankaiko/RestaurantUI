@@ -1,0 +1,16 @@
+::ng-deep .p-dropdown {
+  height: 21.8px;
+  background-color: #fff;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+  box-sizing: border-box;
+  border-radius: unset !important;
+}
+
+::ng-deep .p-dropdown .p-dropdown-trigger {
+  width: unset;
+}
+
+::ng-deep .p-dropdown .p-dropdown-trigger > span {
+  font-size: 70%;
+  margin-right: 2px;
+}

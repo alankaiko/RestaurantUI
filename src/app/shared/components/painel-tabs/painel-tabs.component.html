@@ -1,0 +1,8 @@
+<ul class="lista-tabs tabs">
+  <li class="painel-menu-tab"
+      *ngFor="let item of itens; let posicao= index"
+      (click)="escolherAba(posicao)"
+      [ngClass]="{'campo-em-edicao': posicao === numerodaAba}">
+    {{item.label}}
+  </li>
+</ul>

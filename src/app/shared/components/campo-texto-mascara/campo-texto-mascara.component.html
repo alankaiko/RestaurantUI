@@ -1,0 +1,15 @@
+<div class="campo-container-mascara mt-1">
+  <label>{{labelText}}</label>
+  <p-inputMask #inputNativo
+               [mask]="mascara"
+               appEnterKey
+               [class]="classe"
+               [styleClass]="classe"
+               (keydown.enter)="enter.emit($event)"
+               [id]="id"
+               [required]="required"
+               [readonly]="readonly"
+               [(ngModel)]="texto">
+  </p-inputMask>
+</div>
+

@@ -1,0 +1,29 @@
+<p-dialog [(visible)]="exibir"
+          (onHide)="onHide()"
+          [closeOnEscape]="false"
+          [className]="'dialogo-geral'"
+          (onShow)="onShow.emit()"
+          [modal]="modal"
+          [style]="style"
+          [header]="header"
+          [draggable]="draggable"
+          [resizable]="resizable">
+
+  <ng-template pTemplate="header" *ngIf="cabecalho">
+    <ng-container>
+      <ng-template [ngTemplateOutlet]="cabecalho"></ng-template>
+    </ng-container>
+  </ng-template>
+
+  <ng-template pTemplate="body" *ngIf="conteudo">
+    <ng-container>
+      <ng-template [ngTemplateOutlet]="conteudo"></ng-template>
+    </ng-container>
+  </ng-template>
+
+  <ng-template pTemplate="footer" *ngIf="rodape">
+    <ng-container>
+      <ng-template [ngTemplateOutlet]="rodape"></ng-template>
+    </ng-container>
+  </ng-template>
+</p-dialog>

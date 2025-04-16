@@ -1,0 +1,16 @@
+<div class="campo-container-texto mt-1">
+  <label *ngIf="mostrarLabel">{{labelText}}</label>
+  <p-inputNumber #inputNativo
+                 [(ngModel)]="texto"
+                 [showButtons]="showButtons"
+                 [buttonLayout]="buttonLayout"
+                 spinnerMode="spinnerMode"
+                 [decrementButtonClass]="decrementButtonClass"
+                 [incrementButtonClass]="incrementButtonClass"
+                 [style]="style"
+                 [min]="min"
+                 [max]="max"
+                 [incrementButtonIcon]="incrementButtonIcon"
+                 [decrementButtonIcon]="decrementButtonIcon">
+  </p-inputNumber>
+</div>

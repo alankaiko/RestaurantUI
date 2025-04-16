@@ -1,0 +1,15 @@
+<div class="campo-container-texto" [style]="style">
+  <label *ngIf="possuiLabel"
+         [style]="styleLabel">
+
+    {{labelText}}
+  </label>
+
+  <a>
+    <span *ngIf="!possuiImagem">
+      {{labelButton}}
+    </span>
+
+    <img *ngIf="possuiImagem" [src]="src"/>
+  </a>
+</div>

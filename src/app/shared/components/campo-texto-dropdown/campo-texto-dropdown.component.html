@@ -1,0 +1,25 @@
+<div class="campo-container-dropdown mt-1">
+  <label>{{labelText}}</label>
+  <div>
+    <p-dropdown #inputNativo
+                [class]="classe"
+                [required]="required"
+                [readonly]="readonly"
+                [placeholder]="placeholder"
+                [(ngModel)]="texto"
+                [style]="{'background-color': possuiCor ? corLabel : '', 'width':' 40%', 'padding-left': '5px'}"
+                [options]="options"
+                [autoDisplayFirst]="autoDisplayFirst"
+                appendTo="body">
+    </p-dropdown>
+
+    <input #inputNativo
+           pInputText
+           [style]="{'width': '58%', 'margin-left': '2%', 'padding-left':'5px !important'}"
+           [type]="type"
+           [class]="classe"
+           [readonly]="desativarCampoTexto"
+           [maxlength]="maxlength"
+           [(ngModel)]="textoCampo">
+  </div>
+</div>

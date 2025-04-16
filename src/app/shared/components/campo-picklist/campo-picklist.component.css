@@ -1,0 +1,14 @@
+::ng-deep .lista-selecao .p-picklist {
+  height: 150px
+}
+
+::ng-deep .lista-selecao .p-picklist .p-picklist-list {
+  height: 150px;
+}
+
+::ng-deep .lista-selecao .p-picklist .p-picklist-buttons .p-button {
+  color: unset !important;
+  background: unset !important;
+  border: unset !important;
+  padding: 0 !important;
+}
