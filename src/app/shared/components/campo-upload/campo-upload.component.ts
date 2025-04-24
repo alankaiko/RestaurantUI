@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'campo-upload',
+  standalone: false,
   templateUrl: './campo-upload.component.html',
   styleUrls: ['./campo-upload.component.css']
 })

@@ -1,17 +1,19 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {LayoutComponent} from './layout/layout.component';
 import {FooterComponent} from './footer/footer.component';
 import {MenuComponent} from './menu/menu.component';
+import {LayoutComponent} from './layout/layout.component';
+import {RouterOutlet} from '@angular/router';
 
 @NgModule({
   declarations: [
-    LayoutComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    LayoutComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterOutlet
   ]
 })
 export class ThemesModule {

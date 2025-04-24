@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'campo-texto-area-linha',
+  standalone: false,
   templateUrl: './campo-texto-area-linha.component.html',
   styleUrls: ['./campo-texto-area-linha.component.css']
 })

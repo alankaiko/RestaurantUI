@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'campo-radio',
+  standalone: false,
   templateUrl: './campo-radio.component.html',
   styleUrls: ['./campo-radio.component.css']
 })

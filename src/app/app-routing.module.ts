@@ -1,23 +1,26 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import {LayoutComponent} from './themes/layout/layout.component';
 import {DashboardComponent} from './pages/dashboard/dashboard.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    data: {
-      title: ''
-    },
-    children: [
-      {
-        path: '',
-        component: DashboardComponent,
-      }
-    ]
-  },
 
   {
     path: '',
+    component: LayoutComponent,
+    data: {
+      title: 'Tela Inicial'
+    },
+    children: [
+      {
+        path: 'dashboard',
+        component: DashboardComponent
+      }
+    ]
+  },
+  {
+    path: '',
+    component: LayoutComponent,
     children: [
       {
         path: 'pages',

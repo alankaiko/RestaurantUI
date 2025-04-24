@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'campo-multiselect',
+  standalone: false,
   templateUrl: './campo-multiselect.component.html',
   styleUrls: ['./campo-multiselect.component.css']
 })

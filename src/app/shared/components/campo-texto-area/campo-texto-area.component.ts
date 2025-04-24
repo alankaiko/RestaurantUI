@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'campo-texto-area',
+  standalone: false,
   templateUrl: './campo-texto-area.component.html',
   styleUrls: ['./campo-texto-area.component.css']
 })

@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'campo-badge',
+  standalone: false,
   templateUrl: './campo-badge.component.html',
   styleUrls: ['./campo-badge.component.css']
 })

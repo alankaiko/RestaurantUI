@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'campo-checkbox',
+  standalone: false,
   templateUrl: './campo-checkbox.component.html',
   styleUrls: ['./campo-checkbox.component.css']
 })

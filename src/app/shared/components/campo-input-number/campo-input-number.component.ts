@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'campo-input-number',
+  standalone: false,
   templateUrl: './campo-input-number.component.html',
   styleUrls: ['./campo-input-number.component.css']
 })

@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'campo-button-a',
+  standalone: false,
   templateUrl: './campo-button-a.component.html',
   styleUrls: ['./campo-button-a.component.css']
 })

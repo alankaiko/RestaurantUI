@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'campo-texto-mascara',
+  standalone: false,
   templateUrl: './campo-texto-mascara.component.html',
   styleUrls: ['./campo-texto-mascara.component.css']
 })

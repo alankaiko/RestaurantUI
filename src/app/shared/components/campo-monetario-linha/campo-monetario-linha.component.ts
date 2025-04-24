@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'campo-monetario-linha',
+  standalone: false,
   templateUrl: './campo-monetario-linha.component.html',
   styleUrls: ['./campo-monetario-linha.component.css']
 })

@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'campo-data-linha',
+  standalone: false,
   templateUrl: './campo-data-linha.component.html',
   styleUrls: ['./campo-data-linha.component.css']
 })

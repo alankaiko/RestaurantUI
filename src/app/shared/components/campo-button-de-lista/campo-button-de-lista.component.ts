@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'campo-button-de-lista',
+  standalone: false,
   templateUrl: './campo-button-de-lista.component.html',
   styleUrls: ['./campo-button-de-lista.component.css']
 })

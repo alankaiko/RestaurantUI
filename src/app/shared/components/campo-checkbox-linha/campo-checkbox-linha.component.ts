@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'campo-checkbox-linha',
+  standalone: false,
   templateUrl: './campo-checkbox-linha.component.html',
   styleUrls: ['./campo-checkbox-linha.component.css']
 })

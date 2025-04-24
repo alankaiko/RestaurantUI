@@ -12,11 +12,11 @@ import {
 import {Table} from 'primeng/table';
 import {get} from 'lodash';
 import {LazyLoadEvent} from "primeng/api";
-import {EnumLabelCores} from "../../shared-utils/enuns/enum-label-cores";
-import {ColumnTable} from "../../core/ColumnTable";
+import {ColumnTable} from '../../abstract-core/ColumnTable';
 
 @Component({
   selector: 'tabela-dados',
+  standalone: false,
   templateUrl: './tabela-dados.component.html',
   styleUrls: ['./tabela-dados.component.css']
 })
@@ -78,24 +78,4 @@ export class TabelaDadosComponent implements OnInit {
     return result;
   }
 
-  configurarCor(cor: EnumLabelCores) {
-    switch (cor) {
-      case EnumLabelCores.gray:
-        return '#D9D9D9';
-      case EnumLabelCores.yellow:
-        return '#FFFFCC';
-      case EnumLabelCores.turquoise:
-        return '#A1D5E6';
-      case EnumLabelCores.green:
-        return '#ACE8CC';
-      case EnumLabelCores.lightblue:
-        return '#43D3F7';
-      case EnumLabelCores.orange:
-        return '#D4A26F';
-      case EnumLabelCores.white:
-        return '#ffffff';
-      default:
-        return '#ffffff';
-    }
-  }
 }

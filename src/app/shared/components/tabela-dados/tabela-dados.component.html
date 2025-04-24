@@ -60,7 +60,7 @@
           [class]="coluna.styleClass"
           [width]="coluna.width">
                 <span>
-                    {{coluna.titulo}}
+                    {{coluna.title}}
                 </span>
       </th>
 
@@ -74,7 +74,7 @@
   </ng-template>
 
   <ng-template pTemplate="body" let-entidade let-columns="columns">
-    <tr [ngStyle]="{backgroundColor: configurarCor(entidade.cor)}">
+    <tr>
       <td *ngIf="verRef" class="coluna-ver">
         <ng-container>
           <ng-template [ngTemplateOutlet]="verRef"

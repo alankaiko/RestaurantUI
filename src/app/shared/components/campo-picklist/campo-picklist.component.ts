@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'campo-picklist',
+  standalone: false,
   templateUrl: './campo-picklist.component.html',
   styleUrls: ['./campo-picklist.component.css']
 })

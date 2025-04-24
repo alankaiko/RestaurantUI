@@ -4,6 +4,7 @@ import {constants} from "../../core/constants";
 
 @Component({
   selector: 'campo-data',
+  standalone: false,
   templateUrl: './campo-data.component.html',
   styleUrls: ['./campo-data.component.css']
 })

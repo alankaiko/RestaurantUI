@@ -2,6 +2,7 @@ import {Component, ContentChild, EventEmitter, Input, OnInit, Output, TemplateRe
 
 @Component({
   selector: 'dialogo-modal',
+  standalone: false,
   templateUrl: './dialogo-modal.component.html',
   styleUrls: ['./dialogo-modal.component.css']
 })

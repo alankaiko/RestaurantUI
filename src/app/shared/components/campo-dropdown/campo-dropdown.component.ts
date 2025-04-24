@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'campo-dropdown',
+  standalone: false,
   templateUrl: './campo-dropdown.component.html',
   styleUrls: ['./campo-dropdown.component.css']
 })

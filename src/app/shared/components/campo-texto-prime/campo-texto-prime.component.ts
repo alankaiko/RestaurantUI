@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-campo-texto-prime',
+  standalone: false,
   templateUrl: './campo-texto-prime.component.html',
   styleUrls: ['./campo-texto-prime.component.css']
 })
